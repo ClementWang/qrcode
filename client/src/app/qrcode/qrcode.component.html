@@ -1,0 +1,8 @@
+<zxing-scanner
+  [scannerEnabled]="scannerEnabled"
+  [autofocusEnabled]="autofocusEnabled"
+  [cssClass]="'small-video'"
+  (camerasFound)="displayCameras($event)"
+  (camerasNotFound)="camerasNotFound()"
+  (scanSuccess)="handleQrCodeResult($event)"
+></zxing-scanner>
